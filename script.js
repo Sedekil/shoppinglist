@@ -1,8 +1,8 @@
-const button = document.getElementById("enter");
-const input = document.getElementById("userInput");
-const ul = document.querySelector("ul");
-const li = document.querySelectorAll("li") [0];
-const delBtn = document.querySelectorAll(".delete");
+let button = document.getElementById("enter");
+let input = document.getElementById("userInput");
+let ul = document.querySelector("ul");
+let li = document.querySelectorAll("li") [0];
+let delBtn = document.querySelectorAll(".delete");
 
 function inputLength() {
 	return input.value.length;
@@ -17,8 +17,8 @@ function delItem() {
 }
 
 function createListElement() {
-	const li = document.createElement("li");
-	const delBtn = document.createElement("button");
+	let li = document.createElement("li");
+	let delBtn = document.createElement("button");
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
